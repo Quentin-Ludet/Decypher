@@ -18,17 +18,28 @@ print(key)
 #function to find the letter based on the key
 def getLetter(letter):
     alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-    return alphabet[key.index(letter)]
+    if letter in alphabet:
+        return alphabet[key.index(letter)]
+    else:
+        return letter
 
 
 # %%
 #now decode the message
 message = ''
 for letter in code:
-    if letter in [' ', ',', '.', "'", '?', '\n', '!']:
-        message += letter
-    else:
-        message += getLetter(letter)
+    message += getLetter(letter)
 
 print('New decoded message: ')
 print(message)
+
+# %%
+# Save the solution
+
+file = open('decoded_message.txt', 'w')
+file.write(message)
+file.close
+print('Message saved in decoded_message.txt')
+
+
+# %%

@@ -223,12 +223,22 @@ for i in range(20000 - 1):
 # %%
 # finally decode the best solution
 
-print('final probability')
+print('Final probability:')
 print(all_time_best_acc)
-print('real answer probability')
-print(probability_estimate_dictionary(open('message.txt', 'r').read()))
+
 
 
 print('Final answer: ')
 print(decode(all_time_best_sol))
+
+
+# %%
+# Save the solution
+
+file = open('decoded_message.txt', 'w')
+file.write(decode(all_time_best_sol))
+file.close
+print('Message saved in decoded_message.txt')
+
+
 # %%
