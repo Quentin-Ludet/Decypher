@@ -1,3 +1,5 @@
-.vscode\
+.vscode/
 Cypher.zip
 pyinstaller.py
+pyinstaller.exe
+Cypher/
