@@ -1,0 +1,4 @@
+ok to use it you need to write anything you want in the message file, then rearrange the letters in the key file, and then run the .exe
+you will need to unzip first
+and the result will be in the encoded message file
+try to write something thats 2 or 3 sentences, the longer it is the more accurate the prediction is
