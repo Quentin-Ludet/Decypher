@@ -17,3 +17,9 @@ To decode a message with a key,
 2. Place the key in key.txt (the key should be a list of 26 different letters separated by single commas)
 3. Run key_decypher
 4. Find the decoded message in decoded_message.txt
+
+To use your own training data and dictionary,
+1. Replace training.txt with any long english text (this will hardly affect performance)
+2. Replace english_words.txt with a list of words to be recognized, separated by newlines (this will *significantly* affect performance)
+
+Decypher is a statistical model, and will be much more accurate on longer messages, with accurate training data, and with a comprehensive dictionary.
